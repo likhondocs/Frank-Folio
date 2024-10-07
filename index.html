@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Your $50 Reward - Secure Rewards System</title>
+    <meta name="description" content="Claim your $50 reward with our advanced system! Stay safe and learn how scammers trick users through fake offers.">
+    <meta name="keywords" content="claim reward, secure web design, phishing prevention, $50 reward, scam awareness, interactive web app">
+    <meta name="author" content="LikhonDocs">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Metadata for Facebook Sharing -->
+    <meta property="og:title" content="Claim Your $50 Reward - Secure Web App">
+    <meta property="og:description" content="Click now to claim your reward securely and learn how scammers could misuse similar systems to trick you!">
+    <meta property="og:image" content="https://www.mcdonalds.com.my/storage/articles/March2022/1600_6761.png">
+    <meta property="og:url" content="https://likhondocs.github.io/Frank-Folio/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Claim Your $50 Reward Securely!">
+    <meta name="twitter:description" content="Discover how scammers can trick you using phishing techniques and how to stay safe.">
+    <meta name="twitter:image" content="https://www.mcdonalds.com.my/storage/articles/March2022/1600_6761.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://likhondocs.github.io/Frank-Folio/assets/favicon.png">
+
+    <!-- External Fonts and CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: url('https://likhondocs.github.io/Frank-Folio/assets/hero-background.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-size: 1.25rem;
+        }
+
+        .cta-button:hover {
+            background-color: #218838;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 3rem;
+        }
+
+        .feature {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex-basis: 30%;
+            text-align: center;
+        }
+
+        .feature h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+
+            .feature {
+                flex-basis: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+
+        /* View Counter Style */
+        .view-counter {
+            font-size: 1.2rem;
+            color: #ff0000;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Claim Your $50 Reward - Secure Rewards System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Our Secure Rewards System</h1>
+        <p>Click the button below to claim your reward!</p>
+        <a href="#claim" class="cta-button" onclick="automateTasks()">Claim $50 Reward</a>
+    </section>
+
+    <main>
+        <section id="features" class="features">
+            <div class="feature">
+                <h3>Feature One</h3>
+                <p>Understand how scammers exploit similar web systems to trick you into clicking on malicious links.</p>
+            </div>
+            <div class="feature">
+                <h3>Feature Two</h3>
+                <p>Learn about best practices to stay safe when dealing with online offers and rewards systems.</p>
+            </div>
+            <div class="feature">
+                <h3>Feature Three</h3>
+                <p>Our system shows real-time examples of phishing techniques to help you stay alert and informed.</p>
+            </div>
+        </section>
+
+        <!-- View Counter -->
+        <section class="view-counter" id="view-counter">
+            Views: <span id="views-count">0</span>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Secure Rewards System. All rights reserved.</p>
+    </footer>
+
+    <!-- Advanced JavaScript to Automate Tasks and Count Views -->
+    <script>
+        // Track total views (for simplicity, storing in localStorage)
+        if (!localStorage.viewCount) {
+            localStorage.viewCount = 1;
+        } else {
+            localStorage.viewCount = Number(localStorage.viewCount) + 1;
+        }
+        document.getElementById('views-count').textContent = localStorage.viewCount;
+
+        function automateTasks() {
+            // Task 1: Auto Join Telegram Channel
+            window.open('https://t.me/RexxCheat/1088', '_blank');
+
+            // Task 2: Auto React to the Post
+            setTimeout(() => {
+                alert('Reacted to the Telegram post successfully!');
+            }, 2000);
+
+            // Task 3: Auto Subscribe to YouTube Channel
+            setTimeout(() => {
+                window.open('https://www.youtube.com/@YourChannel?sub_confirmation=1', '_blank');
+                alert('Subscribed to the YouTube channel!');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
