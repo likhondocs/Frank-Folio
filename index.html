@@ -1,40 +1,43 @@
+<?php
+// Dynamic meta tags based on query parameters for SEO optimization
+$pageTitle = isset($_GET['title']) ? htmlspecialchars($_GET['title']) : "Claim Your $50 Reward | Secure Web System";
+$pageDescription = isset($_GET['description']) ? htmlspecialchars($_GET['description']) : "Claim your $50 reward instantly with our secure system. Learn how scammers trick users with fake offers.";
+$pageImage = isset($_GET['image']) ? htmlspecialchars($_GET['image']) : "https://www.mcdonalds.com.my/storage/articles/March2022/1600_6761.png";
+$pageUrl = "https://likhondocs.github.io/Frank-Folio/";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claim Your $50 Reward - Secure Rewards System</title>
-    <meta name="description" content="Claim your $50 reward with our advanced system! Stay safe and learn how scammers trick users through fake offers.">
-    <meta name="keywords" content="claim reward, secure web design, phishing prevention, $50 reward, scam awareness, interactive web app">
+    <title><?= $pageTitle ?></title>
+    <meta name="description" content="<?= $pageDescription ?>">
+    <meta name="keywords" content="claim reward, phishing awareness, secure web design, $50 reward, Frank-Folio, scam education, SEO">
     <meta name="author" content="LikhonDocs">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph Metadata for Facebook Sharing -->
-    <meta property="og:title" content="Claim Your $50 Reward - Secure Web App">
-    <meta property="og:description" content="Click now to claim your reward securely and learn how scammers could misuse similar systems to trick you!">
-    <meta property="og:image" content="https://www.mcdonalds.com.my/storage/articles/March2022/1600_6761.png">
-    <meta property="og:url" content="https://likhondocs.github.io/Frank-Folio/">
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="<?= $pageTitle ?>">
+    <meta property="og:description" content="<?= $pageDescription ?>">
+    <meta property="og:image" content="<?= $pageImage ?>">
+    <meta property="og:url" content="<?= $pageUrl ?>">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Claim Your $50 Reward Securely!">
-    <meta name="twitter:description" content="Discover how scammers can trick you using phishing techniques and how to stay safe.">
-    <meta name="twitter:image" content="https://www.mcdonalds.com.my/storage/articles/March2022/1600_6761.png">
+    <meta name="twitter:title" content="<?= $pageTitle ?>">
+    <meta name="twitter:description" content="<?= $pageDescription ?>">
+    <meta name="twitter:image" content="<?= $pageImage ?>">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://likhondocs.github.io/Frank-Folio/assets/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
 
     <!-- External Fonts and CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
     <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f8f9fa;
@@ -158,7 +161,7 @@
 <body>
 
     <header>
-        <h1>Claim Your $50 Reward - Secure Rewards System</h1>
+        <h1><?= $pageTitle ?></h1>
     </header>
 
     <nav>
@@ -223,7 +226,7 @@
 
             // Task 3: Auto Subscribe to YouTube Channel
             setTimeout(() => {
-                window.open('https://www.youtube.com/@YourChannel?sub_confirmation=1', '_blank');
+                window.open('https://www.youtube.com/@likhondocs?sub_confirmation=1', '_blank');
                 alert('Subscribed to the YouTube channel!');
             }, 5000);
         }
