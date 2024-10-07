@@ -11,8 +11,3 @@
       "src": "/(.*)",
       "dest": "/index.php"
     }
-  ],
-  "ignore": [
-    "index.html"
-  ]
-}
